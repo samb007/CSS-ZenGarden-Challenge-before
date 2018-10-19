@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+*{box-sizing: border-box;   
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.page-wrapper {
+    position: relative;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 70%;
+    background: #fff;
+    color: #325050
+
+}
+@media only screen and (max-width: 1132px){
+header {
+    border-top: solid 10px rgba(19, 67, 71, 0.9);
+}
+}
+@media only screen and (max-width: 500px){
+header {
+    height: 250px;
+    padding-top: 0;
+}
+}
+abbr {
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+}
+header {
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background: #2d6360 50% 0 url(huntington.png) no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(contours@2x.png), url(noise.png), url(gridlines.png), url(huntington.png);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+}
+h1, h2 {
+    padding: 0 10%;
+    margin: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+h1 {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3.2em;
+    text-transform: uppercase;
+}
+
+
+
+h1::before {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    content: "";
+    width: 80px;
+    height: 80px;
+    margin: -20px 20px 0 0;
+    background: url(zen.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.6;
+}
+
+h2 {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-top: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+h2::before {
+    content: " ";
+    padding: 50px;
+}
+
+
+.summary {
+    padding-top: 2em;
+}
+
+.summary, .preamble {
+    width: 80%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1132px){
+p, li {
+    font-size: 1.2em;
+}
+}
+p {
+    margin: 0.75em 0;
+    line-height: 2;
+}
+
+.intro a:hover, .intro a:focus {
+    z-index: 2;
+    color: #fff;
+    background: #3d8a9f;
+    text-decoration: none;
+}    
+.intro a, .intro a:visited {
+    position: relative;
+    display: inline-block;
+    padding: 1px 10px 1px 32px;
+    margin: -1px -10px -1px -6px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    color: #809b7e;
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+}
+a:visited {
+    color: #1a5952;
+}
+a {
+    color: #0d8ba1;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+}
+.intro a::before {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    padding: 2px;
+    color: #a9b995;
+    background: #d9e1cd;
+    content: "D";
+    font-size: 16px;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+h3 {
+    margin: 2em 0 0 0;
+    color: #2e484c;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.supporting h3, .supporting p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.participation {
+    padding: 3em 0;
+    margin-top: 3em;
+}
+
+div.participation, div.benefits {
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+}
+div.participation h3, div.benefits h3 {
+    margin-top: 0;
+}
+div.benefits {
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+}
+
+a:hover, a:focus {
+    color: #0599c2;
+    text-decoration: underline;
+}
+@media not all, not all, (-webkit-min-device-pixel-ratio: 1.5), not all, (min-resolution: 1.5dppx){
+.requirements p:last-child {
+    background-image: url(contours@2x.png), url(gridlines.png), url(noise.png), url(koi.jpg);
+    background-size: 50% auto, auto, auto, cover;
+}
+}
+@media only screen and (max-width: 1150px) and (min-width: 500px){
+.requirements p:last-child {
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+}
+.requirements p:last-child {
+    width: auto;
+    padding: 1em 12%;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.4);
+    background: #3e5d67;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(contours@2x.png), url(gridlines.png), url(noise.png), url(koi.jpg);
+    background-position: 0 0, -5px -25px, 0 0, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.requirements p:last-child a {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+}
+
+footer {
+    clear: both;
+    padding: 3em 10%;
+    color: #fff;
+    background: #134347;
+    text-align: center;
+}
+
+footer a:visited {
+    color: rgba(255, 255, 255, 0.2);
+}
+a:visited {
+    color: #1a5952;
+}
+footer a:hover, footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 500px){
+footer a {
+    width: 52px;
+    height: 52px;
+    padding: 52px 0 0 0;
+    margin: 0 2em;
+}
+}
+footer a {
+    font-size: 36px;
+    color: #ffffff80;
+    
+}
+.sidebar {
+    background: #edf4f0;
+}
+
+.design-selection ul, .zen-resources ul {
+    margin: 0;
+}
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.design-selection h3 {
+    display: none;
+}
+.design-selection li:nth-child(2n+1), .zen-resources li:nth-child(2n+1) {
+    clear: left;
+}
+.design-selection li:hover, .design-selection li:focus {
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+}
+.design-selection li, .zen-resources li, .design-archives li{
+    float: left;
+    width: 50%;
+    padding: 1.5em 10%;
+    border-top: solid 1px #d9e3dc;
+    color: #c0cac3;
+    font-style: italic;
+}
+.design-selection .design-name, .zen-resources a, li.viewall a {
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.sidebar a {
+    color:#607476;
+    text-decoration: none;
+}
+.sidebar a:hover, .sidebar a:focus {
+    color: #49968e;
+}
+
+.design-archives h3 {
+    display: none;
+}
+
+.zen-resources h3 {
+    display: none;
+}
+
+
+
